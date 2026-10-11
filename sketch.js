@@ -5,6 +5,35 @@ let xCity = xMax/2;
 let yCity = yMax*0.8;
 
 
+function drawStar(i, starX, starY, transparency, size){
+  if(i%2==0){
+    fill(199, 180, 64, transparency);
+    ellipse(starX, starY, size);
+  } else if (i%3==0){
+    fill(214, 204, 135, transparency);
+    ellipse(starX, starY, size);
+  } else {
+    fill(112, 100, 19, transparency);
+    ellipse(starX, starY, size);
+  }
+}
+
+function drawStars(n=40){
+  push();
+  noStroke();
+
+  for (let i=0; i < n; i++){
+    let starX = (i*37) % width + (i%3)*5;
+    let starY = ((i*73) % height) + (i%7);
+
+    let transparency = 150 + (i*29) % 106;
+    let size = 2.8 + (i%4) 
+
+    drawStar(i, starX, starY, transparency, size);
+  }
+  pop();
+}
+
 function drawBuilding1() {
 //livello 1 palazzi
 
@@ -232,11 +261,91 @@ pop();
 }
 
 function drawWindows3() {
-  push();
+//livello 3 finestre
+  
+push();
+  
   fill(217, 195, 33);
   noStroke();
-  // finestre livello 3
-  pop();
+
+
+  // palazzo 3.1.1
+
+  let xBuild311 = xCity-200;
+  let yBuild311 = yCity-70;
+
+  rect(xBuild311+15, yBuild311+15, 25, 10);
+  rect(xBuild311+55, yBuild311+15, 25, 10);
+
+  rect(xBuild311+15, yBuild311+45, 25, 10);
+  rect(xBuild311+55, yBuild311+45, 25, 10);
+
+  rect(xBuild311+15, yBuild311+75, 25, 10);
+  rect(xBuild311+55, yBuild311+75, 25, 10);
+
+  rect(xBuild311+15, yBuild311+105, 25, 10);
+  rect(xBuild311+55, yBuild311+105, 25, 10);
+
+  rect(xBuild311+15, yBuild311+135, 25, 10);
+  rect(xBuild311+55, yBuild311+135, 25, 10);
+
+  rect(xBuild311+15, yBuild311+165, 25, 10);
+  rect(xBuild311+55, yBuild311+165, 25, 10);
+
+  // palazzo 3.1.2
+
+  let xBuild312 = xCity-110;
+  let yBuild312 = yCity-140;
+
+  rect(xBuild312+15, yBuild312+15, 10, 40);
+  rect(xBuild312+40, yBuild312+50, 10, 40);
+  rect(xBuild312+65, yBuild312+85, 10, 40);
+
+  rect(xBuild312+15, yBuild312+120, 10, 40);
+  rect(xBuild312+40, yBuild312+155, 10, 40);
+  rect(xBuild312+65, yBuild312+190, 10, 40);
+
+  rect(xBuild312+15, yBuild312+225, 10, 40);
+  rect(xBuild312+40, yBuild312+260, 10, 40);
+  
+
+  // palazzo 3.2
+
+  let xBuild32 = xCity+10;
+  let yBuild32 = yCity-110;
+
+  square(xBuild32+20, yBuild32+25, 10);
+  rect(xBuild32+45, yBuild32+25, 25, 10);
+
+  square(xBuild32+20, yBuild32+45, 10);
+  rect(xBuild32+45, yBuild32+45, 25, 10);
+
+  square(xBuild32+20, yBuild32+65, 10);
+  rect(xBuild32+45, yBuild32+65, 25, 10);
+
+
+  square(xBuild32+20, yBuild32+105, 10);
+  rect(xBuild32+45, yBuild32+105, 25, 10);
+
+  square(xBuild32+20, yBuild32+125, 10);
+  rect(xBuild32+45, yBuild32+125, 25, 10);
+
+  square(xBuild32+20, yBuild32+145, 10);
+  rect(xBuild32+45, yBuild32+145, 25, 10);
+
+
+  square(xBuild32+20, yBuild32+185, 10);
+  rect(xBuild32+45, yBuild32+185, 25, 10);
+
+  square(xBuild32+20, yBuild32+205, 10);
+  rect(xBuild32+45, yBuild32+205, 25, 10);
+  
+  square(xBuild32+20, yBuild32+225, 10);
+  rect(xBuild32+45, yBuild32+225, 25, 10);
+
+  
+pop();
+
 }
 
 function setup() {
@@ -246,6 +355,8 @@ function setup() {
 function draw() {
   background(42, 57, 99);
 
+  drawStars(35);
+
   drawBuilding1();
   drawWindows1();
 
@@ -254,9 +365,5 @@ function draw() {
 
   drawBuilding3();
   drawWindows3();
-
-  fill(255);
-  textSize(14);
-  text("x: " + mouseX + ", y: " + mouseY, 10, 20);
 
 }
