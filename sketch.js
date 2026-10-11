@@ -66,20 +66,28 @@ push();
   let xBuild11 = xCity-200;
   let yBuild11 = yCity-330;
 
-  rect(xBuild11+10, yBuild11+20, 20, 30);
-  rect(xBuild11+50, yBuild11+20, 20, 30);
+  for (let i = 0; i < 6; i++) {
+    rect(xBuild11+10, yBuild11+20 + i*40, 20, 30);
+    rect(xBuild11+50, yBuild11+20 + i*40, 20, 30);
+  }
 
-  rect(xBuild11+10, yBuild11+60, 20, 30);
-  rect(xBuild11+50, yBuild11+60, 20, 30);
 
-  rect(xBuild11+10, yBuild11+100, 20, 30);
-  rect(xBuild11+50, yBuild11+100, 20, 30);
+// PROVA RETTANGOLI PER FINESTRE:
 
-  rect(xBuild11+10, yBuild11+140, 20, 30);
+  // rect(xBuild11+10, yBuild11+20, 20, 30);
+  // rect(xBuild11+50, yBuild11+20, 20, 30);
 
-  rect(xBuild11+10, yBuild11+180, 20, 30);
+  // rect(xBuild11+10, yBuild11+60, 20, 30);
+  // rect(xBuild11+50, yBuild11+60, 20, 30);
 
-  rect(xBuild11+10, yBuild11+220, 20, 30);
+  // rect(xBuild11+10, yBuild11+100, 20, 30);
+  // rect(xBuild11+50, yBuild11+100, 20, 30);
+
+  // rect(xBuild11+10, yBuild11+140, 20, 30);
+
+  // rect(xBuild11+10, yBuild11+180, 20, 30);
+
+  // rect(xBuild11+10, yBuild11+220, 20, 30);
 
 
   // palazzo 1.2
@@ -87,10 +95,17 @@ push();
   let xBuild12 = xCity-100;
   let yBuild12 = yCity-260;
 
-  rect(xBuild12+10, yBuild12+10, 40, 20);
-  rect(xBuild12+10, yBuild12+40, 40, 20);
-  rect(xBuild12+10, yBuild12+70, 40, 20);
-  rect(xBuild12+10, yBuild12+100, 40, 20);
+  for (let i = 0; i < 4; i++) {
+    rect(xBuild12+10, yBuild12+10 + i*30, 40, 20);
+  }
+
+
+// PROVA RETTANGOLI PER FINESTRE:
+
+    // rect(xBuild12+10, yBuild12+10, 40, 20);
+    // rect(xBuild12+10, yBuild12+40, 40, 20);
+    // rect(xBuild12+10, yBuild12+70, 40, 20);
+    // rect(xBuild12+10, yBuild12+100, 40, 20);
 
 
   // palazzo 1.3
@@ -98,17 +113,24 @@ push();
   let xBuild13 = xCity-15;
   let yBuild13 = yCity-290;
 
-  rect(xBuild13+15, yBuild13+15, 15, 30);
-  rect(xBuild13+42.5, yBuild13+15, 15, 30);
-  rect(xBuild13+70, yBuild13+15, 15, 30);
+  for (let i = 0; i < 4; i++) {
+    rect(xBuild13+15, yBuild13+15 + i*45, 15, 30);
+    rect(xBuild13+42.5, yBuild13+15 + i*45, 15, 30);
+    rect(xBuild13+70, yBuild13+15 + i*45, 15, 30);
+  }  
+
   
-  rect(xBuild13+15, yBuild13+60, 15, 30);
-  rect(xBuild13+42.5, yBuild13+60, 15, 30);
-  rect(xBuild13+70, yBuild13+60, 15, 30);
+  // rect(xBuild13+15, yBuild13+15, 15, 30);
+  // rect(xBuild13+42.5, yBuild13+15, 15, 30);
+  // rect(xBuild13+70, yBuild13+15, 15, 30);
+    
+  // rect(xBuild13+15, yBuild13+60, 15, 30);
+  // rect(xBuild13+42.5, yBuild13+60, 15, 30);
+  // rect(xBuild13+70, yBuild13+60, 15, 30);
 
-  rect(xBuild13+42.5, yBuild13+105, 15, 30);
+  // rect(xBuild13+42.5, yBuild13+105, 15, 30);
 
-  rect(xBuild13+42.5, yBuild13+150, 15, 30);
+  // rect(xBuild13+42.5, yBuild13+150, 15, 30);
 
 
   // palazzo 1.4
@@ -116,25 +138,33 @@ push();
   let xBuild14 = xCity+120;
   let yBuild14 = yCity-320;
 
-  rect(xBuild14+10, yBuild14+10, 15, 30);
-  rect(xBuild14+30, yBuild14+10, 15, 30);
-  rect(xBuild14+50, yBuild14+10, 15, 30);
-  rect(xBuild14+70, yBuild14+10, 15, 30);
+  for (let i = 0; i < 4; i++) {
+    rect(xBuild14+10, yBuild14+10 + i*50, 15, 30);
+    rect(xBuild14+30, yBuild14+10 + i*50, 15, 30);
+    rect(xBuild14+50, yBuild14+10 + i*50, 15, 30);
+    rect(xBuild14+70, yBuild14+10 + i*50, 15, 30);
+  }  
 
-  rect(xBuild14+10, yBuild14+60, 15, 30);
-  rect(xBuild14+30, yBuild14+60, 15, 30);
-  rect(xBuild14+50, yBuild14+60, 15, 30);
-  rect(xBuild14+70, yBuild14+60, 15, 30);
 
-  rect(xBuild14+10, yBuild14+110, 15, 30);
-  rect(xBuild14+30, yBuild14+110, 15, 30);
-  rect(xBuild14+50, yBuild14+110, 15, 30);
-  rect(xBuild14+70, yBuild14+110, 15, 30);
+  // rect(xBuild14+10, yBuild14+10, 15, 30);
+  // rect(xBuild14+30, yBuild14+10, 15, 30);
+  // rect(xBuild14+50, yBuild14+10, 15, 30);
+  // rect(xBuild14+70, yBuild14+10, 15, 30);
 
-  rect(xBuild14+10, yBuild14+160, 15, 30);
-  rect(xBuild14+30, yBuild14+160, 15, 30);
-  rect(xBuild14+50, yBuild14+160, 15, 30);
-  rect(xBuild14+70, yBuild14+160, 15, 30);
+  // rect(xBuild14+10, yBuild14+60, 15, 30);
+  // rect(xBuild14+30, yBuild14+60, 15, 30);
+  // rect(xBuild14+50, yBuild14+60, 15, 30);
+  // rect(xBuild14+70, yBuild14+60, 15, 30);
+
+  // rect(xBuild14+10, yBuild14+110, 15, 30);
+  // rect(xBuild14+30, yBuild14+110, 15, 30);
+  // rect(xBuild14+50, yBuild14+110, 15, 30);
+  // rect(xBuild14+70, yBuild14+110, 15, 30);
+
+  // rect(xBuild14+10, yBuild14+160, 15, 30);
+  // rect(xBuild14+30, yBuild14+160, 15, 30);
+  // rect(xBuild14+50, yBuild14+160, 15, 30);
+  // rect(xBuild14+70, yBuild14+160, 15, 30);
   
 pop();
 
