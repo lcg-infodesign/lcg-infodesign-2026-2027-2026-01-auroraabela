@@ -5,14 +5,7 @@ let xCity = xMax/2;
 let yCity = yMax*0.8;
 
 
-function setup() {
-  createCanvas(xMax, yMax);
-}
-
-function draw() {
-  
-  background(42, 57, 99);
-
+function drawBuilding() {
 
 push();
   
@@ -35,7 +28,7 @@ push();
 
   rect(xCity-180, yCity-210, 90, 340);
   rect(xCity-60, yCity-250, 75, 380);
-  rect(xCity+30, yCity-220, 85, 350);
+  rect(xCity+40, yCity-220, 85, 350);
   rect(xCity+115, yCity-120, 85, 250);
   
 pop();  
@@ -48,10 +41,38 @@ push();
 
   rect(xCity-200, yCity-70, 90, 200);
   rect(xCity-110, yCity-140, 90, 270);
-  rect(xCity+20, yCity-110, 90, 240);
+  rect(xCity+10, yCity-110, 90, 240);
+
+pop();
+
+}
+
+function drawWindows() {
+
+push();
+
+  fill(217, 195, 33)
+  noStroke();
+
+  
 
 
 pop();
 
+}
+
+function setup() {
+  createCanvas(xMax, yMax);
+}
+
+function draw() {
+  background(42, 57, 99);
+
+  drawBuilding();
+  drawWindows();
+
+  fill(255);
+  textSize(14);
+  text("x: " + mouseX + ", y: " + mouseY, 10, 20);
 
 }
