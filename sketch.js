@@ -12,7 +12,7 @@ let time = 0;
 let steps = 0;
 
 
-function drawStar(i, starX, starY, transparency, size){
+function drawStar(i, starX, starY, transparency, size) {
   if(i%2==0){
     fill(199, 180, 64, transparency);
     ellipse(starX, starY, size);
@@ -25,7 +25,7 @@ function drawStar(i, starX, starY, transparency, size){
   }
 }
 
-function drawStars(n=50){
+function drawStars(n=150){
   push();
   noStroke();
 
@@ -34,7 +34,7 @@ function drawStars(n=50){
     let starY = ((i*73) % height) + (i%7);
 
     let randomTransparency = random(100, 250);
-    let randomSize = random(1, 4);
+    let randomSize = random(2.5, 5);
 
     drawStar(i, starX, starY, randomTransparency, randomSize);
   }
@@ -92,7 +92,6 @@ push();
   rect(xCity+120, yCity-320, 80, 440);
 
 pop();
-
 }
 
 
@@ -268,7 +267,6 @@ push();
 
   noStroke();
 
-
   // palazzo 3.1.1
 
   let xBuild311 = xCity-200;
@@ -314,7 +312,6 @@ push();
   }
   
 pop();
-
 }
 
 function setup() {
@@ -327,7 +324,7 @@ function draw() {
 
   randomSeed(7);
 
-  drawStars(50);
+  drawStars(100);
 
   drawBuilding1();
   drawWindows1();
